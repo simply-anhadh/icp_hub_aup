@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX - Pushing the Frontiers of Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #010101;
+            color: white;
+            overflow-x: hidden;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+        header {
+            background: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://www.spacex.com/static/images/home-hero@2x.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+        .hero h2 {
+            font-size: 3em;
+            animation: slideInFromBottom 1.5s ease-out;
+        }
+
+        /* Parallax Effect */
+        .parallax {
+            background: url('https://www.spacex.com/static/images/home-rocket-launch.jpg') no-repeat center center/cover;
+            height: 80vh;
+            position: relative;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .parallax .content {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+        }
+        
+        .parallax h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        /* Animated Buttons */
+        .btn {
+            background-color: #FFB600;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff6d00;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about {
+            background-color: #1d1d1d;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #010101;
+            color: #a9a9a9;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .hero h2 {
+                font-size: 2.2em;
+            }
+
+            .about h2 {
+                font-size: 2em;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SpaceX</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Mission</a>
+        <a href="#">Launches</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Exploring Mars and Beyond</h2>
+</div>
+
+<div class="parallax">
+    <div class="content">
+        <h2>Join Us on a Journey to the Stars</h2>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+</div>
+
+<div class="about">
+    <h2>About SpaceX</h2>
+    <p>SpaceX designs, manufactures, and launches advanced rockets and spacecraft with the goal of reducing space transportation costs and enabling the colonization of Mars.</p>
+    <a href="#" class="btn">Explore Our Mission</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 SpaceX. All Rights Reserved.</p>
+    <p>Follow us on <a href="#">Twitter</a>, <a href="#">Instagram</a>, <a href="#">YouTube</a></p>
+</footer>
+
+</body>
+</html>
